@@ -60,7 +60,7 @@ if (!fs.existsSync(__dirname+'/config.js')) {
         "    /**\n"+
         "     * Port to accept connections on\n"+
         "     */\n"+
-        "    port: 54917\n"+
+        "    port: 54917,\n"+
         "\n"+
         "    /**\n"+
         "     * Easypost API key (http://easypost.com)\n"+
