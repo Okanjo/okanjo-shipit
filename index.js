@@ -45,7 +45,7 @@ if (!fs.existsSync(__dirname+'/config.js')) {
     // GENERATE A NEW CONFIG AND SAVE IT
     //
 
-    // Randomly craete a new cipher key and sig
+    // Randomly create a new cipher key and sig
     var randomCipher = new Cipher(),
         template = "module.exports = exports = {\n"+
         "\n"+
@@ -69,7 +69,7 @@ if (!fs.existsSync(__dirname+'/config.js')) {
         "\n"+
         "};";
 
-    console.log('generated a new config file!');
+    console.log('Generated a new config file!');
 
     fs.writeFileSync(__dirname+'/config.js', template);
 }
