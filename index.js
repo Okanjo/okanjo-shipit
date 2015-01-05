@@ -48,26 +48,31 @@ if (!fs.existsSync(__dirname+'/config.js')) {
     // Randomly create a new cipher key and sig
     var randomCipher = new Cipher(),
         template = "module.exports = exports = {\n"+
-        "\n"+
-        "    /**\n"+
-        "     * Encryption protocol\n"+
-        "     */\n"+
-        "    cipher: {\n"+
-        "        key: '"+randomCipher.key.toString('base64')+"',\n"+
-        "        hmac_key: '"+randomCipher.hmacKey.toString('base64')+"'\n"+
-        "    },\n"+
-        "\n"+
-        "    /**\n"+
-        "     * Port to accept connections on\n"+
-        "     */\n"+
-        "    port: 54917,\n"+
-        "\n"+
-        "    /**\n"+
-        "     * Easypost API key (http://easypost.com)\n"+
-        "     */\n"+
-        "    easypost_key: ''\n"+
-        "\n"+
-        "};";
+            "\n"+
+            "    /**\n"+
+            "     * Encryption protocol\n"+
+            "     */\n"+
+            "    cipher: {\n"+
+            "        key: '"+randomCipher.key.toString('base64')+"',\n"+
+            "        hmac_key: '"+randomCipher.hmacKey.toString('base64')+"'\n"+
+            "    },\n"+
+            "\n"+
+            "    /**\n"+
+            "     * Port to accept connections on\n"+
+            "     */\n"+
+            "    port: 54917,\n"+
+            "\n"+
+            "    /**\n"+
+            "     * Easypost API key (http://easypost.com)\n"+
+            "     */\n"+
+            "    easypost_key: '',\n"+
+            "\n"+
+            "    /**\n"+
+            "     * Where to store access logs\n"+
+            "     */\n"+
+            "    access_log: __dirname + '/access.log'\n"+
+            "\n"+
+            "};";
 
     console.log('Generated a new config file!');
 
