@@ -2,6 +2,10 @@
 
 When stuff changes, it's described here.
 
+## 2015-01-07
+ * Refactored logic into separate prototype functions to make it easier to extend
+ * Added php test (e.g. php test/test.php) to show how to communicate with the service via php
+
 ## 2015-01-06
  * Changed the EasyPost rate to return as-is, and we just set some additional minimum properties (id, price, description)
 
