@@ -178,12 +178,16 @@ preg_match('/hmac_key:\s*(?:\'|")(.+)(?:\'|")/m', $config, $matches);
 $hmacKey = $matches[1];
 
 
+preg_match('/port:\s*([0-9]+)/m', $config, $matches);
+$port = $matches[1];
+
+
 //
 // Test the basic informational route
 //
 
 $cipher = new Cipher($key, $hmacKey);
-$encData = file_get_contents('http://localhost:54917/');
+$encData = file_get_contents("http://localhost:$port/");
 $data = $cipher->decrypt($encData);
 echo "$data\n";
 
