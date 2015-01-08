@@ -68,6 +68,11 @@ if (!fs.existsSync(__dirname+'/config.js')) {
             "    easypost_key: '',\n"+
             "\n"+
             "    /**\n"+
+            "     * Shipping provider to use\n"+
+            "     */\n"+
+            "    provider: require('./lib/shippingprovider'),\n"+
+            "\n"+
+            "    /**\n"+
             "     * Where to store access logs\n"+
             "     */\n"+
             "    access_log: __dirname + '/access.log'\n"+
