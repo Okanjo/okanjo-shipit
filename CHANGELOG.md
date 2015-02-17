@@ -2,6 +2,9 @@
 
 When stuff changes, it's described here.
 
+## 2015-02-17
+ * Cleanup / misc fixes
+
 ## 2015-01-08
  * Moved shipping provider to config so it can be easily changed
  * PHP test uses the port from the config file
