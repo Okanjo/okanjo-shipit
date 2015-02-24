@@ -2,6 +2,9 @@
 
 When stuff changes, it's described here.
 
+## 2015-02-24
+ * Added missing variant string from item quote
+
 ## 2015-02-17
  * Cleanup / misc fixes
 
