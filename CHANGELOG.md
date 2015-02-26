@@ -2,6 +2,9 @@
 
 When stuff changes, it's described here.
 
+## 2015-02-26
+ * Use a description if already given, or concat carrier and service together
+
 ## 2015-02-24
  * Added missing variant string from item quote
 
