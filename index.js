@@ -75,7 +75,12 @@ if (!fs.existsSync(__dirname+'/config.js')) {
             "    /**\n"+
             "     * Where to store access logs\n"+
             "     */\n"+
-            "    access_log: __dirname + '/access.log'\n"+
+            "    access_log: __dirname + '/access.log',\n"+
+            "\n"+
+            "    /**\n"+
+            "     * Raven/Sentry error reporting URL\n"+
+            "     */\n"+
+            "    raven_url: null\n"+
             "\n"+
             "};";
 
